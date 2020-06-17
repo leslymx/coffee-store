@@ -8,12 +8,117 @@
 }
 
 body {
-    font-size: 1.5em;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+}
+
+.headerlogo {
+    float: left;
+    width: var(--size-logo);
+    margin: var(--all-margin);
 }
 
 .logo {
-    width: var(--size-logo);
-    margin: var(--all-margin);
+    height: 60px;
+    width: 60px;
+}
+
+.mainheader {
+    height: 80px;
+}
+
+.searchbox {
+    float: right;
+    padding: 5px;
+    margin: 20px 20px;
+    width: 250px;
+}
+
+.headername {
+    font-size: 40px;
+    color: #8A3314;
+    padding: 25px;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.welcomeimage > img {
+    float: left;
+    width: 600px;
+}
+
+.coffeeofthemonth > img {
+    float: right;
+    width: 180px;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+
+/* .coffeeofthemonth {
+    float: right;
+    width: 700px;
+} */
+
+.welcometext {
+    float: left;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+    .welcometext > header {
+        color: #8A3314;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+.events {
+    float: right;
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+    .events > header {
+        margin-left: 20px;
+        color: #8A3314;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+        .events > ul {
+            list-style: none;
+        }
+        .events > ul > li {
+            margin-bottom: 10px;
+        }
+
+.bestsellers{
+    height: 100%;
+    width: 700px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.best {
+    color: #8A3314;
+    font-weight: bold;
+}
+
+.backgroundgradient{
+    background-color: #8A3314;
+    color: whitesmoke;
+}
+
+.coffeebestsellers {
+    background-color: red;
+}
+
+.productarticlemoreinfo {
+    color: green;
+    margin-top: 5px;
 }
 
 .coffee-1 {
@@ -29,4 +134,16 @@ body {
 .productarticlewidethumbnail {
     width: var(--size-coffee);
     margin: var(--all-margin);
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    background-color: gray;
+    margin: 20px 0;
+    padding: 5px;
+}
+
+.blockheader {
+    background-color:yellow;
 }
