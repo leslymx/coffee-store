@@ -1,6 +1,6 @@
 :root {
     --size-coffee: 120px;
-    --size-logo: 100px;
+    
     --all-margin: 10px;
 }
 * {
@@ -14,64 +14,57 @@ body {
     font-size: 1.2em;
 }
 
-.headerlogo {
+.header-logo > img {
     float: left;
-    width: var(--size-logo);
-    margin: var(--all-margin);
-}
-
-.logo {
-    height: 60px;
-    width: 60px;
-}
-
-.mainheader {
+    width: 100px;
     height: 80px;
+    margin: 10px;
 }
 
-.searchbox {
+.main-header {
+    height: 90px;
+    
+}
+
+.search-box {
     float: right;
     padding: 5px;
     margin: 20px 20px;
     width: 250px;
 }
 
-.headername {
-    font-size: 40px;
+.header-name {
+    font-size: 3em;
     color: #8A3314;
     padding: 25px;
-    margin: 8px 0;
+    margin: 10px;
     font-weight: bold;
 }
 
-.welcomeimage > img {
+.welcome-image > img {
     float: left;
     width: 600px;
 }
 
-.coffeeofthemonth > img {
+.coffee-of-the-month > img {
     float: right;
     width: 180px;
-    margin-top: 30px;
+    margin-top: 70px;
     margin-right: 60px;
 }
 
-/* .coffeeofthemonth {
-    float: right;
-    width: 700px;
-} */
-
-.welcometext {
+.welcome-text {
     float: left;
     width: 70%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-    .welcometext > header {
+    .welcome-text > header {
         color: #8A3314;
         font-weight: bold;
         margin-bottom: 10px;
+        font-size: 1.2em;
     }
 
 .events {
@@ -95,55 +88,66 @@ body {
             margin-bottom: 10px;
         }
 
-.bestsellers{
+.bestsellers {
     height: 100%;
     width: 700px;
     float: left;
     margin-bottom: 20px;
 }
 
-.best {
+.bestsellers > .header-title {
     color: #8A3314;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.backgroundgradient{
+.coffee-bestsellers {
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+.background-gradient {
     background-color: #8A3314;
     color: whitesmoke;
+    height: 25px;
 }
 
-.coffeebestsellers {
-    background-color: red;
+ .product-article {
+    margin-top: 10px;
+    display: inline-block;
 }
 
-.productarticlemoreinfo {
-    color: green;
-    margin-top: 5px;
+figure > img {
+    width: 144px;
+    height: 180px;
 }
 
-.coffee-1 {
-    width: var(--size-coffee);
-    margin: var(--all-margin);
+.product-article-name {
+    margin: 10px;
+    color: #8A3314;
+    font-size: 1.1em;
+    font-weight: 600;
 }
 
-.productarticlelargeimage {
-    width: var(--size-coffee);
-    margin: var(--all-margin);
+.product-article-price {
+    margin: 15px;
+    color: rgb(7, 94, 7);
+    font-size: 1.5em;
+    font-weight: 600;
 }
 
-.productarticlewidethumbnail {
-    width: var(--size-coffee);
-    margin: var(--all-margin);
+.add-to-cart-button {
+    margin: 10px;
 }
 
 footer{
     clear: both;
     width: 100%;
-    background-color: gray;
+    background-color: rgba(206, 191, 191, 0.705);
     margin: 20px 0;
     padding: 5px;
 }
 
-.blockheader {
+.block-header {
     background-color:yellow;
 }
