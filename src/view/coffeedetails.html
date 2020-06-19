@@ -1,40 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/mainview.css">
+    <link rel="stylesheet" href="../css/extras.css">
     <title>Coffee-Store</title>
 </head>
+
 <body>
-    <header>
+    <header class="main-header">
         <div>
-            <a class="headerlogo" href="index.html">
+            <a class="header-logo" href="index.html">
                 <img class="logo" src="../res/coffee-logo.png" alt="logo">
             </a>
-            <span class="headername">Coffee Store!</span>
+            <span class="header-name">Coffee Store!</span>
+            <input type="search" class="search-box" placeholder="Search our store" />
         </div>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Our coffees</a></li>
+                <li><a href="#" class="nav-link">Accessories</a></li>
+                <li><a href="#" class="nav-link">Gifts</a></li>
+                <li><a href="#" class="nav-link">Find us</a></li>
+                <li><a href="#" class="nav-link">Checkout</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="coffeedetails">
-        <header class="blockheader">
-            <span>Coffee 1</span>
+    <div class="welcome-image">
+        <img src="../res/coffee-banner.png" alt="coffeeheader">
+    </div>
+
+    <div class="coffee-of-the-month">
+        <img src="https://thumbs.dreamstime.com/b/coffee-bean-brown-paper-bag-packaging-vector-stock-two-recyclable-blank-bags-72712441.jpg"
+            alt="coffee-header">
+    </div>
+
+    <section class="coffee-details">
+        <header class="block-header">
+            <span>Checkout</span>
         </header>
 
-        <figure class="productarticlelargefigure">
-            <img src="../res/coffee-1.png" alt="Coffee 1" class="productarticlelargeimage">
-            <figcaption>Coffee 1</figcaption>
-        </figure>
+    <form class="main-form" action="#" method="post">
+        <fieldset class="box">
+            <legend>Your details</legend>
+            <div>
+                <p>
+                    <label class="text-label" for="firstNameInput">First Name</label>
+                    <input type="text" name="FirstName" id="firstNameInput" class="first-name-input"
+                    autofocus="autofocus" class="text-input" />
+                </p>
 
-        <div class="productarticlecontent">
-            <p class="productarticledescription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus fuga praesentium itaque. Iste repudiandae quibusdam eaque temporibus enim quae? Accusamus ex et inventore excepturi sit praesentium aliquid assumenda est neque.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores at expedita, vitae id quibusdam eligendi voluptates obcaecati aliquam excepturi impedit, provident quae. Quisquam, reprehenderit eveniet? Quam sed rerum accusantium natus?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero cupiditate illum minus, laborum exercitationem, ratione laudantium facere omnis quidem doloremque temporibus dolores voluptas neque est provident corporis officia vel et!
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nisi velit quos iste architecto. Delectus alias maiores quae animi dolores dignissimos error. Commodi ullam reiciendis neque exercitationem, molestias repudiandae alias.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquam quaerat aperiam officiis qui iusto, velit accusamus deserunt rerum illum animi iure praesentium ipsam a quod ipsum laboriosam blanditiis? Odio.
-            </p>
-            <p class="productarticleprice">10$</p>
-        </div>
+                <p>
+                    <label class="text-label" for="lastNameInput">Last Name</label>
+                    <input type="text" name="FirstName" id="lastNameInput" class="first-name-input"
+                    class="text-input" size="10" />
+                </p>
+
+                <p>
+                    <label for="emailInput" class="text-label">Email</label>
+                    <input type="text" id="emailInput" name="Email" class="text-input">
+                </p>
+            </div>
+        </fieldset>
+    </form>
+
+
+
     </section>
 </body>
+
 </html>

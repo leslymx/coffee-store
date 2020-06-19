@@ -21,7 +21,26 @@ body {
 
 .main-header {
     height: 90px;
-    
+}
+
+.navegacion {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.navegacion > ul > li{
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.1em;
+    margin: 5px;
+    text-decoration-line: none;
 }
 
 .search-box {
@@ -42,6 +61,7 @@ body {
 .welcome-image > img {
     float: left;
     width: 600px;
+    margin-top: 30px;
 }
 
 .coffee-of-the-month > img {
@@ -104,7 +124,7 @@ body {
     margin-bottom: 10px;
 }
 
-.background-gradient {
+.background-gradient { 
     background-color: var(--primary-color);
     color: whitesmoke;
     height: 25px;
