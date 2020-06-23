@@ -1,8 +1,9 @@
 :root {
     --primary-color: #471705;
 }
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -12,16 +13,53 @@ body {
     font-size: 1.2em;
 }
 
-.header-logo > img {
+@font-face {
+    font-family: headerfont;
+    src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+.header-logo {
     float: left;
-    width: 100px;
-    height: 80px;
-    margin: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 100px;
+}
+
+.header-logo>img {
+    width: 80px;
 }
 
 .main-header {
-    height: 90px;
-    
+    height: 80px;
+}
+
+.header-name {
+    font-family: headerfont;
+    font-size: 2em;
+    color: var(--primary-color);
+    padding: 25px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.navegacion {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navegacion>ul>li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.1em;
+    margin: 5px;
+    text-decoration-line: none;
 }
 
 .search-box {
@@ -31,24 +69,19 @@ body {
     width: 250px;
 }
 
-.header-name {
-    font-size: 3em;
-    color: var(--primary-color);
-    padding: 25px;
-    margin: 10px;
-    font-weight: bold;
-}
-
-.welcome-image > img {
+.welcome-image {
     float: left;
-    width: 600px;
 }
 
-.coffee-of-the-month > img {
+.coffee-of-the-month {
     float: right;
-    width: 180px;
-    margin-top: 70px;
-    margin-right: 60px;
+    width: 290px;
+}
+
+.coffee-of-the-month>img {
+    float: right;
+    width: 200px;
+    height: 240px;
 }
 
 .welcome-text {
@@ -56,35 +89,35 @@ body {
     width: 70%;
     margin-top: 20px;
     margin-bottom: 20px;
+    column-count: 2;
+    -webkit-column-count: 2;
 }
 
-    .welcome-text > header {
-        color: var(--primary-color);
-        font-weight: bold;
-        margin-bottom: 10px;
-        font-size: 1.2em;
-    }
+.welcome-text>header {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
 
 .events {
     float: right;
-    width: 30%;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
-    .events > header {
-        margin-left: 20px;
-        color: var(--primary-color);
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
+.events>header {
+    margin-left: 20px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
-        .events > ul {
-            list-style: none;
-        }
-        .events > ul > li {
-            margin-bottom: 10px;
-        }
+.events>ul {
+    list-style: none;
+}
+
+.events>ul>li {
+    margin-bottom: 10px;
+}
 
 .bestsellers {
     height: 100%;
@@ -93,7 +126,7 @@ body {
     margin-bottom: 20px;
 }
 
-.bestsellers > .header-title {
+.bestsellers>.header-title {
     color: var(--primary-color);
     font-weight: bold;
     margin-bottom: 5px;
@@ -105,17 +138,21 @@ body {
 }
 
 .background-gradient {
-    background-color: var(--primary-color);
-    color: whitesmoke;
+    padding-left: 5px;
     height: 25px;
+    color: whitesmoke;
+    background: -webkit-linear-gradient(left, var(--primary-color), red);
+    background: -o-linear-gradient(right, var(--primary-color), red);
+    background: -moz-linear-gradient(right, var(--primary-color), red);
+    background: linear-gradient(to right, var(--primary-color), red);
 }
 
- .product-article {
+.product-article {
     margin-top: 10px;
     display: inline-block;
 }
 
-figure > img {
+figure>img {
     width: 144px;
     height: 180px;
 }
@@ -135,10 +172,29 @@ figure > img {
 }
 
 .add-to-cart-button {
-    margin: 10px;
+    cursor: pointer;
+    padding: 4px 25px;
+    background: #603813;
+    border: 1px solid #381f09;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+    color: #f3f3f3;
+    font-size: 0.8em;
+    width: 80px;
 }
 
-footer{
+.add-to-cart-button:hover, .add-to-cart-button:focus {
+    background-color: #512c0a;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+}
+
+footer {
     clear: both;
     width: 100%;
     background-color: rgba(206, 191, 191, 0.705);
