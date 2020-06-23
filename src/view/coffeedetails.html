@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/extras.css">
+    <link rel="stylesheet" href="../css/details.css">
     <title>Coffee-Store</title>
 </head>
 
@@ -43,29 +43,92 @@
             <span>Checkout</span>
         </header>
 
-    <form class="main-form" action="#" method="post">
-        <fieldset class="box">
-            <legend>Your details</legend>
-            <div>
+        <form class="main-form" action="#" method="post">
+            <fieldset class="box">
+                <legend>Your details</legend>
+                <div>
+                    <p>
+                        <label class="text-label" for="firstNameInput">First Name</label>
+                        <input type="text" name="FirstName" id="firstNameInput" class="first-name-input"
+                            autofocus="autofocus" class="text-input" />
+                    </p>
+
+                    <p>
+                        <label class="text-label" for="lastNameInput">Last Name</label>
+                        <input type="text" name="FirstName" id="lastNameInput" class="first-name-input"
+                            class="text-input" size="10" />
+                    </p>
+
+                    <p>
+                        <label for="emailInput" class="text-label">Email</label>
+                        <input type="text" id="emailInput" name="Email" class="text-input">
+                    </p>
+
+                    <p>
+                        <label for="streetInput" class="text-label">Street</label>
+                        <input type="text" id="streetInput" name="Street" class="text-input">
+                    </p>
+
+                    <p>
+                        <label for="numberInput" class="text-label">Number</label>
+                        <input type="text" id="numberInput" name="Number" class="text-input">
+                    </p>
+
+                    <p>
+                        <label class="text-label" for="zipInput">ZIP code</label>
+                        <input type="text" name="Zip" id="zipInput" class="text-input">
+                    </p>
+
+                    <p>
+                        <label for="cityInput" class="text-label">City</label>
+                        <input type="text" name="City" id="cityInput" class="text-input">
+                    </p>
+
+                    <p>
+                        <label for="countryInput" class="text-label">Country</label>
+                        <input type="text" name="Country" id="countryInput" class="text-input">
+                    </p>
+
+                    <p>
+                        <label for="phoneInput" class="text-label">Phone number</label>
+                        <input type="number" name="PhoneNumber" id="phoneInput" class="text-input">
+                    </p>
+
+                    <p>
+                        <label for="blogInput" class="text-label">Blog</label>
+                        <input type="url" name="Blog" id="blogInput" class="text-input">
+                    </p>
+
+                    <p>
+                        <label for="remarkInput" class="text-label">Remark</label>
+                        <input type="text" name="Remark" id="remarkInput" class="text-input">
+                    </p>
+                </div>
+            </fieldset>
+            <br />
+
+            <fieldset class="box">
+                <legend>Your order</legend>
+
                 <p>
-                    <label class="text-label" for="firstNameInput">First Name</label>
-                    <input type="text" name="FirstName" id="firstNameInput" class="first-name-input"
-                    autofocus="autofocus" class="text-input" />
+                    <label for="deliveryDateInput" class="text-label">Request Delivery Date</label>
+                    <input type="date" name="BirthDate" id="deliveryDateInput" class="text-input">
                 </p>
 
                 <p>
-                    <label class="text-label" for="lastNameInput">Last Name</label>
-                    <input type="text" name="FirstName" id="lastNameInput" class="first-name-input"
-                    class="text-input" size="10" />
+                    <label for="colorInput" class="text-label">Wrapping paper color</label>
+                    <input type="color" name="Color" id="colorInput" class="text-input">
                 </p>
 
                 <p>
-                    <label for="emailInput" class="text-label">Email</label>
-                    <input type="text" id="emailInput" name="Email" class="text-input">
+                    <label for="bowInput" class="text-label">How many bows on the package?</label>
+                    <input type="number" name="Bows" id="bowInput" class="text-input" min="1" max="10">
                 </p>
-            </div>
-        </fieldset>
-    </form>
+            </fieldset>
+
+            <input type="submit" value="Place order" class="submit-button">
+        </form>
+
 
 
 

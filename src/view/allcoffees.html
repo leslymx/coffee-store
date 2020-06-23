@@ -3,52 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/mainview.css">
+    <link rel="stylesheet" href="../css/all-coffees.css">
+    <script src="../scripts/dragAndDrop.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div>
-            <a class="headerlogo" href="index.html">
+            <a class="header-logo" href="index.html">
                 <img class="logo" src="../res/coffee-logo.png" alt="logo">
             </a>
-            <span class="headername">Coffee Store!</span>
+            <span class="header-name">Coffee Store!</span>
+            <input type="search" class="search-box" placeholder="Search our store" />
         </div>
     </header>
-    <section class="allcoffees">
-        <header class="blockheader">
+
+    <nav class="navegacion">
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Our coffees</a></li>
+            <li><a href="#" class="nav-link">Accessories</a></li>
+            <li><a href="#" class="nav-link">Gifts</a></li>
+            <li><a href="#" class="nav-link">Find us</a></li>
+            <li><a href="#" class="nav-link">Checkout</a></li>
+        </ul>
+    </nav>
+
+    <div class="welcome-image">
+        <img src="../res/coffee-banner.png" alt="coffeeheader">
+    </div>
+    <div class="coffee-of-the-month">
+        <img src="https://thumbs.dreamstime.com/b/coffee-bean-brown-paper-bag-packaging-vector-stock-two-recyclable-blank-bags-72712441.jpg"
+            alt="coffee-header">
+    </div>
+
+    <section class="all-coffees">
+        <header class="block-header">
             <span>Espresso coffee beans</span>
         </header>
-        <article class="productarticlewide" id="coffee-1" data-price="10.00">
-            <img src="../res/coffee-1.png" alt="coffee1" id="coffee1" class="productarticlewidethumbnail">
-            <div class="productarticlewidecontent">
+        <article class="product-article-wide" id="coffee-1" data-price="10.00">
+            <img src="../res/coffee-1.png" alt="coffee1" id="coffee1" class="product-article-wide-thumbnail">
+            <div class="product-article-wide-content">
                 <header>
-                    <span class="productarticlewidename">Coffee 1</span>
+                    <span class="product-article-wide-name">Coffee 1</span>
                 </header>
-                <p class="productarticlewidedescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis, laboriosam quam adipisci velit neque perferendis sapiente labore vel corrupti fugiat excepturi ad eum sequi harum modi natus officiis iste!</p>
-                <p class="productarticlewideprice">10$</p>
+                <p class="product-article-wide-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis, laboriosam quam adipisci velit neque perferendis sapiente labore vel corrupti fugiat excepturi ad eum sequi harum modi natus officiis iste!</p>
+                <p class="product-article-wide-price">10$</p>
             </div>
         </article>
-        <article class="productarticlewide" id="coffee-2" data-price="20.00">
-            <img src="../res/coffee-1.png" alt="coffee2" id="coffee3" class="productarticlewidethumbnail">
-            <div class="productarticlewidecontent">
+        <article class="product-article-wide" id="coffee-2" data-price="20.00">
+            <img src="../res/coffee-1.png" alt="coffee2" id="coffee3" class="product-article-wide-thumbnail">
+            <div class="product-article-wide-content">
                 <header>
-                    <span class="productarticlewidename">Coffee 2</span>
+                    <span class="product-article-wide-name">Coffee 2</span>
                 </header>
-                <p class="productarticlewidedescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis, laboriosam quam adipisci velit neque perferendis sapiente labore vel corrupti fugiat excepturi ad eum sequi harum modi natus officiis iste!</p>
-                <p class="productarticlewideprice">20$</p>
+                <p class="product-article-wide-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis, laboriosam quam adipisci velit neque perferendis sapiente labore vel corrupti fugiat excepturi ad eum sequi harum modi natus officiis iste!</p>
+                <p class="product-article-wide-price">20$</p>
             </div>
         </article>
-        <article class="productarticlewide" id="coffee-3" data-price="30.00">
-            <img src="../res/coffee-1.png" alt="coffee3" id="coffee3" class="productarticlewidethumbnail">
-            <div class="productarticlewidecontent">
+        <article class="product-article-wide" id="coffee-3" data-price="30.00">
+            <img src="../res/coffee-1.png" alt="coffee3" id="coffee3" class="product-article-wide-thumbnail">
+            <div class="product-article-wide-content">
                 <header>
-                    <span class="productarticlewidename">Coffee 3</span>
+                    <span class="product-article-wide-name">Coffee 3</span>
                 </header>
-                <p class="productarticlewidedescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis, laboriosam quam adipisci velit neque perferendis sapiente labore vel corrupti fugiat excepturi ad eum sequi harum modi natus officiis iste!</p>
-                <p class="productarticlewideprice">30$</p>
+                <p class="product-article-wide-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis, laboriosam quam adipisci velit neque perferendis sapiente labore vel corrupti fugiat excepturi ad eum sequi harum modi natus officiis iste!</p>
+                <p class="product-article-wide-price">30$</p>
             </div>
         </article>
     </section>
+
+    <div class="shopping-cart" id="shoppingcart">
+        <header class="block-header"><span>Shopping cart</span></header>
+        <ul></ul>
+    </div>
 </body>
 </html>
