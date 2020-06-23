@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #471705;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+}
+
+@font-face {
+    font-family: headerfont;
+    src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+.header-logo {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 100px;
+}
+
+.header-logo>img {
+    width: 80px;
+}
+
+.main-header {
+    height: 80px;
+}
+
+.header-name {
+    font-family: headerfont;
+    font-size: 2em;
+    color: var(--primary-color);
+    padding: 25px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.navegacion {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navegacion>ul>li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.1em;
+    margin: 5px;
+    text-decoration-line: none;
+}
+
+.search-box {
+    float: right;
+    padding: 5px;
+    margin: 20px 20px;
+    width: 250px;
+}
+
+.welcome-image {
+    float: left;
+}
+
+.coffee-of-the-month {
+    float: right;
+    width: 290px;
+}
+
+.coffee-of-the-month>img {
+    float: right;
+    width: 200px;
+    height: 240px;
+}
+
+.all-coffees {
+    border: 2px dashed;
+    float: left;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.shopping-cart {
+    border: 2px dashed;
+    height: 100%;
+    width: 700px;
+    float: left;
+    margin-bottom: 20px;
+}
