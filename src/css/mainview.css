@@ -42,7 +42,6 @@ body {
 .header-name {
     font-family: headerfont;
     font-size: 2em;
-    color: var(--primary-color);
     padding: 25px;
     margin: 5px 0;
 }
@@ -120,10 +119,12 @@ body {
     -webkit-column-count: 2;
 }
 
+.header-name,
 .navegacion,
 .welcome-text>header,
 .events>header,
-.bestsellers>.header-title {
+.bestsellers>.header-title,
+.product-article-name {
     color: var(--primary-color);
 }
 
@@ -179,7 +180,6 @@ figure>img {
 
 .product-article-name {
     margin: 10px;
-    color: var(--primary-color);
     font-size: 1.1em;
 }
 
