@@ -1,0 +1,80 @@
+
+:root {
+    --primary-color: #471705;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+}
+
+.header-logo > img {
+    float: left;
+    width: 100px;
+    height: 80px;
+    margin: 10px;
+}
+
+.main-header {
+    height: 90px;
+}
+
+.navegacion {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.navegacion > ul > li{
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.1em;
+    margin: 5px;
+    text-decoration-line: none;
+}
+
+.search-box {
+    float: right;
+    padding: 5px;
+    margin: 20px 20px;
+    width: 250px;
+}
+
+.header-name {
+    font-size: 3em;
+    color: var(--primary-color);
+    padding: 25px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.welcome-image > img {
+    float: left;
+    width: 600px;
+    margin-top: 30px;
+}
+
+.coffee-of-the-month > img {
+    float: right;
+    width: 180px;
+    margin-top: 70px;
+    margin-right: 60px;
+}
+
+.coffee-details {
+    float: left;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
